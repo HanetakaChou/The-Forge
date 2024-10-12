@@ -1,49 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Vulkan">
-      <UniqueIdentifier>{a1d4b3f2-b893-4008-a74f-fc459b0bb5bc}</UniqueIdentifier>
+    <Filter Include="Common_3">
+      <UniqueIdentifier>{f5367183-f9ed-4804-a3ef-441a4f481741}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Interfaces">
-      <UniqueIdentifier>{e9017e44-218a-498a-8e8b-7b948497494b}</UniqueIdentifier>
+    <Filter Include="Common_3\Graphics">
+      <UniqueIdentifier>{1d856c98-5a55-4926-a698-cacb7cf230e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ThirdParty\OpenSource\VulkanMemoryAllocator">
-      <UniqueIdentifier>{32fc0ceb-4d6c-4060-9cea-bffcb48bb614}</UniqueIdentifier>
+    <Filter Include="Common_3\Graphics\Interfaces">
+      <UniqueIdentifier>{ef3300b0-5e92-4763-b586-0f4a39540791}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ThirdParty\OpenSource">
-      <UniqueIdentifier>{6d7f45f2-4cb9-48a4-9beb-d75aea6dcc04}</UniqueIdentifier>
+    <Filter Include="Common_3\Graphics\Vulkan">
+      <UniqueIdentifier>{6764f3a6-c9df-4c41-a49e-91e6e48d7a79}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ThirdParty">
-      <UniqueIdentifier>{70fedeec-0e04-4659-af11-d69d2ee8398e}</UniqueIdentifier>
+    <Filter Include="Common_3\Graphics\ThirdParty">
+      <UniqueIdentifier>{92a0bfb4-848d-4bc2-a4aa-7fad9080ae3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Graphics\ThirdParty\OpenSource">
+      <UniqueIdentifier>{5857f701-4f6b-4e8c-b83d-8d970b58fea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Graphics\ThirdParty\OpenSource\VulkanMemoryAllocator">
+      <UniqueIdentifier>{fcac8bd0-9df3-44d3-b27d-1854da5f73b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Resources">
+      <UniqueIdentifier>{9190ef4f-9c94-475f-9f7a-a389af8ad4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Resources\ResourceLoader">
+      <UniqueIdentifier>{e90c184f-0797-40f3-9c1e-17b8e3014e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Resources\ResourceLoader\Interfaces">
+      <UniqueIdentifier>{7ce8057c-ceb6-48e5-8a37-8a277ad1f5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Tools">
+      <UniqueIdentifier>{7ba848a0-69b8-4982-9101-04c057ed1a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Tools\Network">
+      <UniqueIdentifier>{1e67e1b8-f261-49de-afa5-3a19998b00c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_3\Tools\ReloadServer">
+      <UniqueIdentifier>{98184117-0d38-4379-a5a0-4d850e12ba76}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common_3\Graphics\CommonShaderReflection.cpp">
+      <Filter>Common_3\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common_3\Graphics\GraphicsConfig.cpp">
+      <Filter>Common_3\Graphics</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\Common_3\Graphics\Vulkan\Vulkan.cpp">
-      <Filter>Vulkan</Filter>
+      <Filter>Common_3\Graphics\Vulkan</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Common_3\Graphics\Vulkan\VulkanRaytracing.cpp">
-      <Filter>Vulkan</Filter>
+      <Filter>Common_3\Graphics\Vulkan</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Common_3\Graphics\Vulkan\VulkanShaderReflection.cpp">
-      <Filter>Vulkan</Filter>
+      <Filter>Common_3\Graphics\Vulkan</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common_3\Resources\ResourceLoader\ResourceLoader.cpp">
+      <Filter>Common_3\Resources\ResourceLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common_3\Tools\Network\Network.c">
+      <Filter>Common_3\Tools\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common_3\Tools\ReloadServer\ReloadClient.cpp">
+      <Filter>Common_3\Tools\ReloadServer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common_3\Graphics\GraphicsConfig.h">
+      <Filter>Common_3\Graphics</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\Interfaces\IGraphics.h">
-      <Filter>Interfaces</Filter>
+      <Filter>Common_3\Graphics\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\Interfaces\IRay.h">
-      <Filter>Interfaces</Filter>
+      <Filter>Common_3\Graphics\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\Interfaces\IShaderReflection.h">
-      <Filter>Interfaces</Filter>
+      <Filter>Common_3\Graphics\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\Vulkan\VulkanCapsBuilder.h">
-      <Filter>Vulkan</Filter>
+      <Filter>Common_3\Graphics\Vulkan</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\Vulkan\VulkanConfig.h">
-      <Filter>Vulkan</Filter>
+      <Filter>Common_3\Graphics\Vulkan</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Common_3\Graphics\ThirdParty\OpenSource\VulkanMemoryAllocator\VulkanMemoryAllocator.h">
-      <Filter>ThirdParty\OpenSource\VulkanMemoryAllocator</Filter>
+      <Filter>Common_3\Graphics\ThirdParty\OpenSource\VulkanMemoryAllocator</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common_3\Resources\ResourceLoader\TextureContainers.h">
+      <Filter>Common_3\Resources\ResourceLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common_3\Resources\ResourceLoader\Interfaces\IResourceLoader.h">
+      <Filter>Common_3\Resources\ResourceLoader\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common_3\Tools\Network\Network.h">
+      <Filter>Common_3\Tools\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common_3\Tools\ReloadServer\ReloadClient.h">
+      <Filter>Common_3\Tools\ReloadServer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Common_3\Graphics\ShaderUtilities.h.fsl">
+      <Filter>Common_3\Graphics</Filter>
+    </None>
   </ItemGroup>
 </Project>

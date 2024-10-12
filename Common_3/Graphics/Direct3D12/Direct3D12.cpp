@@ -4714,7 +4714,7 @@ void addRootSignature(Renderer* pRenderer, const RootSignatureDesc* pRootSignatu
         UpdateFrequencyLayoutInfo& layout = layouts[i];
         if (arrlen(layout.mRootDescriptorParams))
         {
-            ASSERT(1 == arrlen(layout.mRootDescriptorParams));
+            // ASSERT(1 == arrlen(layout.mRootDescriptorParams));
 
             uint32_t rootDescriptorIndex = 0;
 

@@ -241,7 +241,7 @@
     <FSLShader>
       <OutDir>$(OutDir)/$(ProjectName)/Shaders</OutDir>
       <BinaryOutDir>$(OutDir)/$(ProjectName)/CompiledShaders</BinaryOutDir>
-      <Language>DIRECT3D12</Language>
+      <Language>DIRECT3D12 VULKAN</Language>
       <Port>
       </Port>
       <CacheArgs>false</CacheArgs>
@@ -280,7 +280,7 @@
     <FSLShader>
       <OutDir>$(OutDir)/$(ProjectName)/Shaders</OutDir>
       <BinaryOutDir>$(OutDir)/$(ProjectName)/CompiledShaders</BinaryOutDir>
-      <Language>DIRECT3D12</Language>
+      <Language>DIRECT3D12 VULKAN</Language>
       <CacheArgs>false</CacheArgs>
     </FSLShader>
   </ItemDefinitionGroup>

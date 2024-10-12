@@ -597,6 +597,10 @@ def glsl(platform: Platforms, debug, binary: ShaderBinary, dst):
 
         shader_src += [line]
 
+    for i in range(len(shader_src)):
+        if shader_src[i].startswith('#line'):
+            shader_src[i] = ''
+        
     shader_src = ''.join(shader_src)
     for pattern, repl in subs:
         shader_src = re.sub(pattern, repl, shader_src)
